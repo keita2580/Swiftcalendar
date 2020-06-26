@@ -13,9 +13,13 @@
 		1BE692FE24A1101900CB7887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE692FC24A1101900CB7887 /* Main.storyboard */; };
 		1BE6930024A1101B00CB7887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE692FF24A1101B00CB7887 /* Assets.xcassets */; };
 		1BE6930324A1101B00CB7887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6930124A1101B00CB7887 /* LaunchScreen.storyboard */; };
+		1BE6930D24A1123400CB7887 /* nextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6930C24A1123400CB7887 /* nextViewController.swift */; };
+		BBE0BE855B9C83BEE352E9C6 /* Pods_Swiftcalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BC3BC321568F76CA9FE3F0 /* Pods_Swiftcalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12BC3BC321568F76CA9FE3F0 /* Pods_Swiftcalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftcalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		146F73156697C9BEA3020A45 /* Pods-Swiftcalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftcalendar.release.xcconfig"; path = "Target Support Files/Pods-Swiftcalendar/Pods-Swiftcalendar.release.xcconfig"; sourceTree = "<group>"; };
 		1BE692F324A1101900CB7887 /* Swiftcalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftcalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE692F624A1101900CB7887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE692F824A1101900CB7887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		1BE692FF24A1101B00CB7887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE6930224A1101B00CB7887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE6930424A1101B00CB7887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE6930C24A1123400CB7887 /* nextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nextViewController.swift; sourceTree = "<group>"; };
+		53110BECD52232F64ED41EF2 /* Pods-Swiftcalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftcalendar.debug.xcconfig"; path = "Target Support Files/Pods-Swiftcalendar/Pods-Swiftcalendar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE0BE855B9C83BEE352E9C6 /* Pods_Swiftcalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1BE692F524A1101900CB7887 /* Swiftcalendar */,
 				1BE692F424A1101900CB7887 /* Products */,
+				A2EF06AAFEFC96D5BD226F6D /* Pods */,
+				C031D199F263671EF45FE401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				1BE692FF24A1101B00CB7887 /* Assets.xcassets */,
 				1BE6930124A1101B00CB7887 /* LaunchScreen.storyboard */,
 				1BE6930424A1101B00CB7887 /* Info.plist */,
+				1BE6930C24A1123400CB7887 /* nextViewController.swift */,
 			);
 			path = Swiftcalendar;
+			sourceTree = "<group>";
+		};
+		A2EF06AAFEFC96D5BD226F6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53110BECD52232F64ED41EF2 /* Pods-Swiftcalendar.debug.xcconfig */,
+				146F73156697C9BEA3020A45 /* Pods-Swiftcalendar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C031D199F263671EF45FE401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12BC3BC321568F76CA9FE3F0 /* Pods_Swiftcalendar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE6930724A1101B00CB7887 /* Build configuration list for PBXNativeTarget "Swiftcalendar" */;
 			buildPhases = (
+				BA61B164DD8F9763E5119DEE /* [CP] Check Pods Manifest.lock */,
 				1BE692EF24A1101900CB7887 /* Sources */,
 				1BE692F024A1101900CB7887 /* Frameworks */,
 				1BE692F124A1101900CB7887 /* Resources */,
+				B36A69A8F80EF1A5A03C9495 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B36A69A8F80EF1A5A03C9495 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swiftcalendar/Pods-Swiftcalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swiftcalendar/Pods-Swiftcalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swiftcalendar/Pods-Swiftcalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA61B164DD8F9763E5119DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swiftcalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BE692EF24A1101900CB7887 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1BE692FB24A1101900CB7887 /* ViewController.swift in Sources */,
+				1BE6930D24A1123400CB7887 /* nextViewController.swift in Sources */,
 				1BE692F724A1101900CB7887 /* AppDelegate.swift in Sources */,
 				1BE692F924A1101900CB7887 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +355,7 @@
 		};
 		1BE6930824A1101B00CB7887 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53110BECD52232F64ED41EF2 /* Pods-Swiftcalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +367,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keita.Swiftcalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1BE6930924A1101B00CB7887 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 146F73156697C9BEA3020A45 /* Pods-Swiftcalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keita.Swiftcalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
