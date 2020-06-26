@@ -8,4 +8,7 @@ target 'Swiftcalendar' do
   # Pods for Swiftcalendar
     pod 'FSCalendar', :git=> 'https://github.com/WenchaoD/FSCalendar'
 
+  # Pods for Swiftcalendar
+    pod 'CalculateCalendarLogic', :git=> 'https://github.com/fumiyasac/handMadeCalendarAdvance.git'
+
 end

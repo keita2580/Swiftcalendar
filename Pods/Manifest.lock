@@ -1,21 +1,29 @@
 PODS:
+  - CalculateCalendarLogic (0.3.0)
   - FSCalendar (2.8.1)
 
 DEPENDENCIES:
+  - CalculateCalendarLogic (from `https://github.com/fumiyasac/handMadeCalendarAdvance.git`)
   - FSCalendar (from `https://github.com/WenchaoD/FSCalendar`)
 
 EXTERNAL SOURCES:
+  CalculateCalendarLogic:
+    :git: https://github.com/fumiyasac/handMadeCalendarAdvance.git
   FSCalendar:
     :git: https://github.com/WenchaoD/FSCalendar
 
 CHECKOUT OPTIONS:
+  CalculateCalendarLogic:
+    :commit: 2ed6ade997d57f7e4d6d7214a7868e4e5f031e80
+    :git: https://github.com/fumiyasac/handMadeCalendarAdvance.git
   FSCalendar:
     :commit: ee0a887d8be8ba05c2b2680dfa27a8b260d5ba55
     :git: https://github.com/WenchaoD/FSCalendar
 
 SPEC CHECKSUMS:
+  CalculateCalendarLogic: cd5b2c706a8628bb924c5ee9d05c4f61bdbaf390
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
 
-PODFILE CHECKSUM: 864d6f0cce282f32a440da939140398f08030244
+PODFILE CHECKSUM: 33cbc80732e62a1d4792935086e1db9e221480b6
 
 COCOAPODS: 1.9.3
